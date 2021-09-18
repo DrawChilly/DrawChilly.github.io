@@ -378,31 +378,31 @@ main {
     text-align: center;
 }
 
-.col {
+.Ski {
     float: left;
     text-align: center;
     line-height: 22px;
     font-size: 18px;
 }
 
-.col h3 {
+.Skills h3 {
     color: #cf7600;
     font-weight: bold;
 }
 
-.col img {
+.Skills img {
     transform: scale(1);
     transition: all 0.4s;
 }
 
-.col img:hover {
+.Skills img:hover {
     transform: scale(1.1);
 }
 @media (max-width: 1200px){
-    .col h3{
+    .Skills h3{
         font-size: 18px;
     }
-    .col span {
+    .Skills span {
         font-size: 16px;
     }
     .col {
@@ -424,7 +424,7 @@ main {
 
 .Cases {
     width: 100%;
-    height: 1080px;
+    height: 1120px;
     color: #384354;
 }
 
@@ -432,50 +432,44 @@ main {
     font-size: 28px;
     text-align: center;
     color: #263244;
-    padding-top: 108px;
+    padding-top: 68px;
     font-weight: bold;
 }
 
 .UpperText {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     margin: 32px 0px 40px 0px;
 }
 .Screen img{
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
-    text-align: center;
+}
+@media (min-width: 1400px){
+    .Screen img{
+    min-width: 100%;
+    height: auto;    
+    }
 }
 
-.Site {
+
+.SiteContacts p{
     font-size: 20px;
-    line-height: 25px;
-}
-
-.SiteContacts {
-    float: left;
-    margin: 32px 0px 0px 390px;
-    font-size: 16px;
 }
 
 .SiteContacts h3 {
     font-weight: bold;
+    font-size: 22px;
+}
+.SiteInfo span{
     font-size: 18px;
-    margin: 2px 2px;
 }
-
-.SiteInfo {
-    float: left;
-    margin: 32px 0px 0px 100px;
-}
-
 .SiteInfo h3 {
     font-weight: bold;
-    font-size: 18px;
-    margin: 2px 2px;
+    font-size: 22px;
 }
 
-.Site input {
+.SiteContacts input{
     height: 45px;
     border: 2px solid #63b5ae;
     background: #63b5ae;
@@ -488,44 +482,48 @@ main {
     transform: scale(1);
 }
 
-.Site input:hover {
+.SiteContacts input:hover {
     background: #fff;
     color: #63b5ae;
 }
 
-.Site input:active {
+.SiteContacts input:active {
     transform: scale(1.1);
 }
 
 
 .Price {
     width: 100%;
-    height: 790px;
+    height: 920px;
+}
+.Calc {
+    height: 757px;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 20px 0px #ddd;
 }
 
 .Price h2 {
-    font-size: 28px;
+    font-size: 32px;
     color: #263244;
-    padding-top: 108px;
+    padding-top: 50px;
     font-weight: bold;
     text-align: center;
 }
 
 .Price form {
     text-align: left;
-    width: 890px;
-    margin: 0px auto;
+    width: 90%;
+    margin: 0px 5%;
 }
 
 .Price form select {
     height: 60px;
-    width: 890px;
-    background: #eee;
+    width: 100%;
     color: #737373;
     font-size: 20px;
-    padding: 0px 26px 0px 26px;
+    padding: 0px 5% 0px 5%;
     border: 1px solid #eee;
-    background: url(../img/select.png) no-repeat;
+    background: #efefef url(../img/select.png) no-repeat;
     background-position: 98% 50%;
     transition: 0.4s all;
 }
@@ -534,17 +532,24 @@ main {
     font-size: 26px;
     color: #263244;
     font-weight: bold;
-    margin: 50px 0px 24px 0px;
+    margin: 25px 0px 18px 0px;
 }
 
-.Line {
+.Line img{
+    max-width: 90%;
+    margin: 34px 5% 0px 5%;
     text-align: center;
-    margin-top: 38px;
+}
+@media (min-width: 1400px){
+    .Line img{
+    min-width: 90%;
+    height: auto;    
+    }
 }
 
 .Results {
-    width: 890px;
-    margin: 0px auto;
+    width: 90%;
+    margin: 0px 5%;
     font-size: 22px;
     color: #1c2534;
     font-weight: bold;
@@ -559,6 +564,25 @@ main {
 
 .Price form select:hover {
     box-shadow: 0px 0px 10px 6px #eee;
+}
+.Calc input{
+    height: 42px;
+    border: 2px solid #63b5ae;
+    background: #63b5ae;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.Calc input:hover {
+    background: #fff;
+    color: #63b5ae;
+}
+
+.Calc input:active {
+    transform: scale(1.1);
 }
 
 
@@ -581,13 +605,11 @@ main {
     text-align: center;
 }
 
-.MoreStat li {
-    float: left;
-    text-align: center;
-    line-height: 22px;
+.MoreStat {
     font-size: 16px;
     font-weight: bold;
     color: #323e4f;
+    text-align: center;
     transform: scale(1);
     transition: 1s;
     -webkit-animation: statpics 2s ease;
@@ -595,12 +617,12 @@ main {
     animation: statpics 2s ease;
 }
 
-.MoreStat li h3 {
+.MoreStat h3 {
     font-size: 32px;
     font-weight: bolder;
+    padding: 28px 0px 10px 0px;
 }
-
-.MoreStat li:hover {
+.Sta:hover {
     transform: scale(1.05);
 }
 
@@ -626,19 +648,19 @@ main {
 .Reviews h2 {
     font-size: 28px;
     color: #263244;
-    padding-top: 102px;
+    padding-top: 84px;
     font-weight: bold;
     text-align: center;
 }
 
 .Misha {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .Text {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 40px;
     font-size: 22px;
     color: #263244;
 }
@@ -650,9 +672,9 @@ main {
     color: #263244;
 }
 
+
 .Dots {
-    width: 60px;
-    margin: 40px auto 0px auto;
+    text-align: center;
 }
 
 .Dots li {
@@ -668,9 +690,11 @@ main {
 
 
 .Contacts {
-    height: 808px;
     width: 100%;
-    background: url(../img/bg3.jpg);
+    height: 800px;
+    background: url(../img/bg3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
     color: #fff;
 }
 
@@ -687,31 +711,27 @@ main {
     font-size: 20px;
 }
 
-.MoreInfo {
+.Inf{
     text-align: center;
-    width: 820px;
-    margin: 44px auto 0px auto;
     font-size: 18px;
 }
 
-.MoreInfo img {
+.Inf img {
     margin-bottom: 10px;
 }
 
-.MoreInfo li {
+.Inf {
     float: left;
-    padding: 0px 30px;
-    line-height: 22px;
+    line-height: 28px;
     transform: scale(1);
 }
 
-.MoreInfo li:hover {
+.Inf:hover {
     transform: scale(1.05);
 }
 
 .Form h3 {
-    font-size: 20px;
-    padding-top: 116px;
+    font-size: 20px;;
     font-weight: bold;
     text-align: center;
 }
@@ -781,14 +801,10 @@ main {
 .Send:active {
     transform: scale(1.1);
 }
-
-.Images {
-    /*text-align: center;*/
-    margin: 60px 30% 0px 39%;
+.Images{
+    text-align: center;
 }
-
 .Images img {
-    padding: 0px 25px;
     transform: scale(1);
     transition: 1s;
 }
@@ -800,10 +816,12 @@ main {
 .Images img:active {
     transform: scale(1.1);
 }
-
-.End {
+footer{
     height: 96px;
     width: 100%;
+}
+.End {
+    
     background: #354051;
     text-align: center;
     color: #fff;
