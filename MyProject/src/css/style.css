@@ -738,17 +738,15 @@ main {
 
 .Form {
     margin: 0px auto;
-    width: 732px;
     text-align: center;
 }
 
 .Name {
-    width: 352px;
+    width: 100%;
     height: 34px;
+    padding: 10px;
     background: #d2d6dc;
-    margin: 32px 24px 14px 0px;
     font-size: 16px;
-    padding-left: 10px;
 }
 
 .Name:hover {
@@ -756,11 +754,11 @@ main {
 }
 
 .EMail {
-    width: 352px;
+    width: 100%;
     height: 34px;
+    padding: 10px;
     background: #d2d6dc;
     font-size: 16px;
-    padding-left: 10px;
 }
 
 .EMail:hover {
@@ -768,7 +766,7 @@ main {
 }
 
 .Message {
-    width: 732px;
+    width: 100%;
     height: 94px;
     background: #d2d6dc;
     font-size: 16px;
@@ -821,10 +819,9 @@ footer{
     width: 100%;
 }
 .End {
-    
+    height: 100%;
     background: #354051;
     text-align: center;
     color: #fff;
-    line-height: 96px;
     font-size: 18px;
 }
