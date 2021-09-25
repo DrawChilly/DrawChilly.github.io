@@ -24,8 +24,8 @@ while (true){
     if (siteType == 2) calcPrice.push(5000), calcTime.push(5)
     if (siteType == 3) calcPrice.push(7000), calcTime.push(10)
     if (siteType == 4) calcPrice.push(8000), calcTime.push(8)
-    if (siteType == 5) calcPrice.push(4000), calcTime.push(5)
-    if (siteType <= 5)
+    if (siteType == 5) calcPrice.push(4000), calcTime.push(5) 
+    if (siteType == 1 || siteType == 2 || siteType == 3 || siteType == 4 || siteType == 5)
     break;
     alert( "Выберите номер типа сайта!" );
 }
@@ -40,7 +40,7 @@ while (true){
     if (siteDesign == 3) calcPrice.push(3000), calcTime.push(3)
     if (siteDesign == 4) calcPrice.push(4000), calcTime.push(4)
     if (siteDesign == 5) calcPrice.push(5000), calcTime.push(4)
-    if (siteDesign <= 5)
+    if (siteDesign == 1 || siteDesign == 2 || siteDesign == 3 || siteDesign == 4 || siteDesign == 5)
     break;
     alert( "Выберите номер дизайна сайта!" );
 }
@@ -53,7 +53,7 @@ while (true){
     if (siteAdapt == 1) calcPrice.push(2000), calcTime.push(2)
     if (siteAdapt == 2) calcPrice.push(1000), calcTime.push(1) 
     if (siteAdapt == 3) calcPrice.push(0), calcTime.push(0)
-    if (siteAdapt <= 3)
+    if (siteAdapt == 1 || siteAdapt == 2 || siteAdapt == 3)
     break;
     alert( "Выберите адаптивность сайта!" );
 }
